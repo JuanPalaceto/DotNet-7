@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!--<TargetFramework>net7.0</TargetFramework>-->
+	  <!-- Cambiar el framework a .Net standard 2.0 y usar el compilador de c# 11 -->
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <LangVersion>11</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Using Include="System.Console" Static="true"/>
+	</ItemGroup>
+
+</Project>

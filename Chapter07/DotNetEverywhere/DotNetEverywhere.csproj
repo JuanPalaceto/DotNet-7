@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <RuntimeIdentifiers>
+		  win10-x64;osx.11.0-arm64;linux-x64;linux-arm64
+	  </RuntimeIdentifiers>
+
+	  <DebugType>embedded</DebugType>
+
+	  <!--ELiminar las assemblies que no se utilizan (Reducir el peso de la app) a nivel assembly-->
+	  <PublishTrimmed>true</PublishTrimmed>
+	  <!--A nivel archivo-->
+	  <TrimMode>Link</TrimMode>
+  </PropertyGroup>
+	<ItemGroup>
+		<Using Include="System.Console" Static="true"/>
+	</ItemGroup>
+</Project>
